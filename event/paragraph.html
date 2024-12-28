@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn{
+            border: 2px solid black;
+            background-color: red;
+            padding: 14px 10px;
+            font-size: 20px;
+            color: white;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        div{
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h2>"My name is sajid"</h2>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum possimus iure eligendi odit commodi saepe non cupiditate nemo soluta architecto, ipsa quia nesciunt explicabo libero minima fugiat quibusdam fuga sed repellendus ipsam voluptatem vitae provident. Eius aspernatur, omnis odit repudiandae fugit a inventore obcaecati alias architecto sed ab voluptas amet tempore blanditiis doloribus quos reiciendis placeat perferendis? Esse cupiditate rerum ratione officia corrupti sit quibusdam laboriosam incidunt, sint reprehenderit nam culpa labore nobis, quas atque exercitationem error deserunt illo quis dolorum suscipit? Eius, quidem necessitatibus possimus ad nostrum in illo enim maiores, officiis fugiat, et ratione laudantium nesciunt culpa expedita labore fuga consectetur a. Quasi delectus fugit minima sequi amet doloremque autem libero ducimus cumque enim veniam, eaque totam, nemo omnis corrupti obcaecati. Praesentium placeat hic officiis blanditiis esse, enim quod dolor. Facere est quidem ab cumque dignissimos fuga! Voluptates necessitatibus tenetur dicta nam doloremque aperiam ex odio obcaecati odit accusamus. Saepe minima soluta assumenda, fugit sed odit quia minus quaerat officiis perspiciatis eaque possimus aperiam, tenetur et quos quo! Quis, dignissimos. Magnam quo reiciendis deleniti delectus ab quae dignissimos vero quaerat odio temporibus iste, maiores accusantium tenetur corporis corrupti enim harum, ut est numquam similique. Quisquam odit accusantium culpa quasi perspiciatis qui officiis, quibusdam quo vel amet? Atque, sequi? Similique tempora laborum velit! Nostrum id voluptas quidem praesentium iste? Eum ea iste vitae voluptas itaque voluptates cumque expedita nobis.</p></div>
+    <button id="btn" onclick="tooglefunction()">Show/Hidden</button>
+    <script>
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover', function run(){
+            para.style.background-color; 'red';
+        });
+        para.addEventListener('mouseout',function run(){
+            alert('Mouse is out the text')
+
+        });
+        function tooglefunction(){
+            if(para.style.display!= 'none'){
+                para.style.display= 'none'; 
+            }
+            else{
+                para.style.display= 'block';
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi provident exercitationem vero a. Delectus, enim vero. Reiciendis in libero, error perferendis adipisci atque distinctio nam eum, eveniet necessitatibus unde quos.
+        </p>
+    </div>
+    <div id="sajid"></div>
+</body>
+<script>
+    var name="sajid ";
+    var friend="saad ";
+    var depatment="Software ";
+    var comple;
+    comple= "My name is sajid " + name + "I am is a student of "+ depatment + "My friend name is "+friend; 
+    console.log(name + friend + depatment);
+    console.log(comple);
+    console.log(comple.length);
+
+    //write some thing is web page through java script
+    document.getElementById('sajid').innerHTML='<h1>Muhammad Sajid</h1>';
+
+    //indexing
+    var position1=comple.indexOf('sajid');//give the  start the first index of substring from start
+    var position=comple.lastIndexOf('sajid');//give the start for index of subdtring from last
+    //console.log(position);
+    //console.log(position1);
+
+    //slicing
+    var substring = comple.slice(20,50);
+    console.log(substring);
+
+    //replacing sub string
+    var naming='My name is muhammad sajid';
+    var repacestr=naming.replace('sajid','majid');
+    console.log(naming);
+
+</script>
+</html>

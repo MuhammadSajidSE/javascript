@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+<body>
+    <div class="container">
+        <p>I want to learn the settiem and clear time in javasript</p>
+        The time now is <span id="time"></span>
+    </div>
+</body>
+<script>
+    //settiemout which call the function only one time after interval of time
+    function bolo(name){
+        console.log("Asalam walikum "+name);
+    }
+    //setTimeout(bolo, 5000," sajid");//just write the function name not call the function
+    //if you want to not call the function that certain contion
+
+    Timer=setTimeout(bolo, 5000," sajid");
+    //if i want to certain  condtion that function not work that cleartimeout
+    clearTimeout(Timer);
+    console.log("Hello sajid");
+
+    //setinterval which call the function repeatdly after interval of time
+    //setInterval(bolo,1000,"sajid");
+     //if i want to certain  condtion that function not work that cleartimeout
+    settimeid=setInterval(bolo,1000,"sajid");
+    clearInterval(settimeid);
+
+    //create the clock in website
+    function setclock(){
+        time = new Date();
+        console.log(time);
+        document.getElementById('time').innerHTML=time;}
+        setInterval(setclock,1000);
+</script>
+</html>

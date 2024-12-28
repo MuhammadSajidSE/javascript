@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">This is my first container</div>
+    <script>
+        let student={
+            name:"sajid",
+            class:"second year",
+            roll_no:"SE-22033"
+        }
+        console.log(student);
+        let jsonstring = JSON.stringify(student);//convert the object into student
+        console.log(jsonstring);
+        let change = jsonstring.replace('sajid','javed');
+        console.log(change);
+    </script>
+</body>
+</html>

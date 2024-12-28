@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi provident exercitationem vero a. Delectus, enim vero. Reiciendis in libero, error perferendis adipisci atque distinctio nam eum, eveniet necessitatibus unde quos.
+        </p>
+    </div>
+    <div id="sajid"></div>
+</body>
+<script> 
+    //replacing substring to other
+    var naming='My name is muhammad sajid sajid, sajid';
+    var repacestr=naming.replace('sajid','majid');
+    console.log(repacestr);
+
+    //upper case
+    console.log(repacestr.toUpperCase());
+    console.log(repacestr.toLowerCase());
+    console.log(repacestr.search('name'));
+
+    //concatination
+    console.log(naming.concat(repacestr));
+
+    //to remove the widespace start and end not between
+    name="                  my               name             is              sajid        ";
+    console.log(name);
+    console.log(name.trim());
+
+    //get the character on given index
+    var chr11=naming.charAt(11);
+    console.log(chr11);
+
+</script>
+</html>
